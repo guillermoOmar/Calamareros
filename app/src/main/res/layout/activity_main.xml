@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.alumno.calamareros.MainActivity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+
+    android:orientation="vertical"
+    >
+    <TextView
+        android:padding="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A quién quieres compartirle recetas?"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:id="@+id/name_friend"
+        android:hint="Ingresa el nombre de tu amigo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"/>
+
+
+    <TextView
+        android:paddingLeft="16dp"
+        android:paddingBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qué receta de calamares deseas compartir?"
+        android:textSize="16sp"/>
+
+    <CheckBox
+        android:padding="8dp"
+        android:id="@+id/al_ajillo_checkbox"
+        android:text="Al ajillo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked_al_ajillo"
+        android:textSize="16sp"
+        />
+    <CheckBox
+        android:padding="8dp"
+        android:id="@+id/con_arroz_checkbox"
+        android:text="Con arroz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked_con_arroz"
+        android:textSize="16sp"
+        />
+    <CheckBox
+        android:padding="8dp"
+        android:id="@+id/con_salsa_checkbox"
+        android:text="Con salsa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked_con_salsa"
+        android:textSize="16sp"
+        />
+    <CheckBox
+        android:padding="8dp"
+        android:id="@+id/fritos_checkbox"
+        android:text="A la Romana"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked_fritos"
+        android:textSize="16sp"
+        />
+    <CheckBox
+        android:padding="8dp"
+        android:id="@+id/rellenos_checkbox"
+        android:text="Rellenos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onCheckboxClicked_rellenos"
+        android:textSize="16sp"
+        />
+    <ImageView
+        android:padding="16dp"
+        android:id="@+id/calamar_image_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:src="@drawable/calamar" />
+
+
+    <Button
+        android:padding="16dp"
+        android:id="@+id/comparte_receta"
+        android:onClick="comparteReceta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comparte las Recetas"
+        android:textSize="16sp"/>
+</LinearLayout>
+
+</ScrollView>
