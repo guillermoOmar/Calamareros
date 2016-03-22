@@ -150,8 +150,8 @@ public class MainActivity extends AppCompatActivity {
         }
 
         if (arroz == true) {
-            message = message + "Receta de calamares en salsa"+"\n";
-            message = message + "https://www.youtube.com/watch?v=pgov4f3SB5c"+"\n"+"\n";
+            message = message + "Receta de calamares con arroz"+"\n";
+            message = message + "https://www.youtube.com/watch?v=d9rsgrzKm78"+"\n"+"\n";
         }
 
 
@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
         message = message + "Espero que sea de tu agrado."+"\n";
-        message = message + "Preparalo y dsfrutalo con la familia y los amigos.";
+        message = message + "Preparalo y disfrutalo con la familia y los amigos.";
         return message;
     }
 
